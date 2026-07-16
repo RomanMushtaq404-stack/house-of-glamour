@@ -1,0 +1,37 @@
+.categories {
+  padding: 80px 40px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.categories h2 {
+  font-size: 38px;
+  color: #d63384;
+  margin-bottom: 40px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 220px;
+  height: 140px;
+  background: #ffeaf3;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  background: #ffd5e8;
+}

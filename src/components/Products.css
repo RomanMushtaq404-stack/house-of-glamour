@@ -1,0 +1,42 @@
+.products {
+    padding: 80px 8%;
+    background: #fafafa;
+    text-align: center;
+}
+
+.products-title {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.products-subtitle {
+    color: #777;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .products {
+        padding: 60px 20px;
+    }
+
+    .products-title {
+        font-size: 32px;
+    }
+
+    .products-subtitle {
+        font-size: 16px;
+    }
+
+}
