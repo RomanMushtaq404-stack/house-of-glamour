@@ -1,9 +1,23 @@
+import ProductCard from "../components/ProductCard";
+import bags from "../data/bags";
+import "../components/Products.css";
+
 function Bags() {
   return (
-    <div>
-      <h1>Bags Collection</h1>
-      <p>Explore our stylish bags collection.</p>
-    </div>
+    <section className="products">
+
+      <h2>Bags Collection</h2>
+
+      <div className="product-container">
+        {bags.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+          />
+        ))}
+      </div>
+
+    </section>
   );
 }
 
