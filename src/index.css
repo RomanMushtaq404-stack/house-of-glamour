@@ -27,18 +27,16 @@ nav {
   flex-wrap: wrap; /* allows wrapping on small screens */
   padding: 15px 20px;
   background: #f8f8f8;
-}
-
-nav h1 {
-  color: #ff4081;
-  font-size: 1.8rem;
-  line-height: 1.2;
+  overflow-x: hidden; /* prevents horizontal scroll */
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap; /* ensures menu items wrap */
   list-style: none;
-  gap: 20px;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
 }
 
 nav ul li a {
@@ -55,12 +53,22 @@ nav ul li a {
   padding: 40px 20px;
 }
 
-.hero-section img {
-  max-width: 50%;
-  height: auto;
-  border-radius: 8px;
+/* Banner Section */
+.banner {
+  width: 100%;
+  overflow: hidden; /* prevent overflow */
 }
 
+.banner img {
+  width: 100%;          /* full width on all screens */
+  height: auto;         /* keep aspect ratio */
+  max-height: 100vh;    /* never exceed screen height */
+  object-fit: contain;  /* show full image without cropping */
+  object-position: center;
+  display: block;
+}
+
+/* Hero Text */
 .hero-text {
   max-width: 45%;
 }
@@ -98,13 +106,21 @@ button:hover {
     margin-bottom: 10px;
   }
 
+  body {
+    overflow-x: hidden; /* stops horizontal scroll on mobile */
+  }
+
   .hero-section {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-section img {
-    max-width: 100%;
+  /* ✅ Mobile Banner Adjustment */
+  .banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   /* ensures full image visible */
+    object-position: top center;
     margin-bottom: 20px;
   }
 
