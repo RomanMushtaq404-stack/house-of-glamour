@@ -7,19 +7,6 @@ function Hero() {
       className="hero"
       style={{ backgroundImage: `url(${heroBanner})` }}
     >
-      <div className="hero-overlay">
-
-        <div className="hero-buttons">
-          <a href="#categories" className="shop-btn">
-            Shop Now
-          </a>
-
-          <a href="#featured" className="explore-btn">
-            Explore Collection
-          </a>
-        </div>
-
-      </div>
     </section>
   );
 }
