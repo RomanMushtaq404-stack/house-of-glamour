@@ -13,6 +13,16 @@ import shoulderbag3 from "../assets/products/bags/3pc-shoulderbag3.jpeg";
 import shoulderbag4 from "../assets/products/bags/3pc-shoulderbag4.jpeg";
 import shoulderbag5 from "../assets/products/bags/3pc-shoulderbag5.jpeg";
 
+// New imports for crossbody bags
+import yellowCrossbody from "../assets/products/bags/yellow-crossbody-bag.jpeg";
+import whiteCrossbody from "../assets/products/bags/white-crossbody-bag.jpeg";
+import blackCrossbody from "../assets/products/bags/black-crossbody-bag.jpeg";
+import brownCrossbody from "../assets/products/bags/brown-crossbody-bag.jpeg";
+import pinkCrossbody from "../assets/products/bags/pink-crossbody-bag.jpeg";
+import blueCrossbody from "../assets/products/bags/blue-crossbody-bag.jpeg";
+import greyCrossbody from "../assets/products/bags/grey-crossbody-bag.jpeg";
+import maroonCrossbody from "../assets/products/bags/maroon-crossbody-bag.jpeg";
+
 const bags = [
   {
     id: 1,
@@ -43,6 +53,22 @@ const bags = [
     ],
     price: "Rs 1500",
     description: "Stylish premium handbags crafted with fine detailing and modern design.",
+  },
+  {
+    id: 3,
+    name: "Crossbody Bag Collection",
+    images: [
+      yellowCrossbody,
+      whiteCrossbody,
+      blackCrossbody,
+      brownCrossbody,
+      pinkCrossbody,
+      blueCrossbody,
+      greyCrossbody,
+      maroonCrossbody,
+    ],
+    price: "Rs 1050",
+    description: "Trendy crossbody bags available in multiple colors — lightweight and versatile.",
   },
 ];
 
