@@ -4,6 +4,8 @@ import dressblack from "../assets/products/dresses/dress-black.jpeg";
 import dresspink from "../assets/products/dresses/dress-pink.jpeg";
 import dressyellow from "../assets/products/dresses/dress-yellow.jpeg";
 import dressskyblue from "../assets/products/dresses/dress-skyblue.jpeg";
+import dresswhite from "../assets/products/dresses/dress-white.jpeg";
+import dressgreen from "../assets/products/dresses/dress-green.jpeg";
 
 // New imports for unstitched dresses
 import unstitched1 from "../assets/products/dresses/unstitched1.jpeg";
@@ -26,14 +28,18 @@ const dresses = [
       dressbrown,
       dressskyblue,
       dressyellow,
+      dresswhite,
+      dressgreen,
     ],
-    price: "Rs 2600",
+    price: "Rs 1750",
     sizeDetails: {
-      shirtChest: "21-22 inches",
-      shirtLength: "35 inches",
-      sleeves: "23 inches",
-      shalwarLength: "38 inches",
-      waist: "Free Size (Elastic)",
+      shirtChest: {
+        medium: "21 inches",
+        large: "22 inches",
+        xl: "23 inches",
+      },
+      shirtLength: "38 inches",
+      flapperLength: "38-39 inches",
     },
     description:
       "Beautiful embroidered suit with stylish sleeves and farshi shalwar.",
@@ -59,7 +65,7 @@ const dresses = [
     name: "Unstitched Dress 3",
     images: [unstitched3],
     price: "Rs 4000",
-    description: " unstitched dress material.",
+    description: "Unstitched dress material.",
   },
   {
     id: 5,
