@@ -4,6 +4,7 @@ import dressblack from "../assets/products/dresses/dress-black.jpeg";
 import dresspink from "../assets/products/dresses/dress-pink.jpeg";
 import dressyellow from "../assets/products/dresses/dress-yellow.jpeg";
 import dressskyblue from "../assets/products/dresses/dress-skyblue.jpeg";
+// new imports
 import dresswhite from "../assets/products/dresses/dress-white.jpeg";
 import dressgreen from "../assets/products/dresses/dress-green.jpeg";
 
@@ -102,6 +103,38 @@ const dresses = [
     price: "Rs 4000",
     description: "Beautiful unstitched fabric with fine texture.",
   },
+  {
+  id: 10,
+  name: "Dress White",
+  images: [dresswhite],
+  price: "Rs 1750",
+  sizeDetails: {
+    shirtChest: {
+      medium: "21 inches",
+      large: "22 inches",
+      xl: "23 inches",
+    },
+    shirtLength: "38 inches",
+    flapperLength: "38-39 inches",
+  },
+  description: "Elegant white lawn dress with stylish design.",
+},
+{
+  id: 11,
+  name: "Dress Green",
+  images: [dressgreen],
+  price: "Rs 1750",
+  sizeDetails: {
+    shirtChest: {
+      medium: "21 inches",
+      large: "22 inches",
+      xl: "23 inches",
+    },
+    shirtLength: "38 inches",
+    flapperLength: "38-39 inches",
+  },
+  description: "Beautiful green lawn dress.",
+},
 ];
 
 export default dresses;

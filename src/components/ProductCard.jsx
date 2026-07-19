@@ -6,12 +6,11 @@ function ProductCard({ product }) {
 
   return (
     <div className="product-card">
-
       <div className="product-image">
         <img
-  src={mainImage || "/placeholder.png"}
-  alt={product.name}
-/>
+          src={mainImage || "/placeholder.png"}
+          alt={product.name}
+        />
       </div>
 
       <div className="thumbnail-container">
@@ -27,20 +26,37 @@ function ProductCard({ product }) {
       </div>
 
       <h3>{product.name}</h3>
-
       <p className="price">{product.price}</p>
-
       <p>{product.description}</p>
 
       {product.sizeDetails && (
         <div className="size-details">
           <h4>Size Details:</h4>
 
-          <p>Shirt Chest: {product.sizeDetails.shirtChest}</p>
-          <p>Shirt Length: {product.sizeDetails.shirtLength}</p>
-          <p>Sleeves: {product.sizeDetails.sleeves}</p>
-          <p>Shalwar Length: {product.sizeDetails.shalwarLength}</p>
-          <p>Waist: {product.sizeDetails.waist}</p>
+          <p>
+            Shirt Chest:{" "}
+            {typeof product.sizeDetails.shirtChest === "object"
+              ? Object.entries(product.sizeDetails.shirtChest)
+                  .map(([size, value]) => `${size.toUpperCase()}: ${value}`)
+                  .join(", ")
+              : product.sizeDetails.shirtChest}
+          </p>
+
+          {product.sizeDetails.shirtLength && (
+            <p>Shirt Length: {product.sizeDetails.shirtLength}</p>
+          )}
+          {product.sizeDetails.sleeves && (
+            <p>Sleeves: {product.sizeDetails.sleeves}</p>
+          )}
+          {product.sizeDetails.shalwarLength && (
+            <p>Shalwar Length: {product.sizeDetails.shalwarLength}</p>
+          )}
+          {product.sizeDetails.waist && (
+            <p>Waist: {product.sizeDetails.waist}</p>
+          )}
+          {product.sizeDetails.flapperLength && (
+            <p>Flapper Length: {product.sizeDetails.flapperLength}</p>
+          )}
         </div>
       )}
 
@@ -52,7 +68,6 @@ function ProductCard({ product }) {
       >
         Order on WhatsApp
       </a>
-
     </div>
   );
 }
